@@ -1,0 +1,15 @@
+import { useState } from 'preact/hooks'
+
+export { Counter }
+
+function Counter() {
+  const [count, setCount] = useState(0)
+  return (
+    <button type="button" onClick={(event) => {
+      console.log(event);
+      setCount((count) => count + 1)
+      }}>
+      Counter {count}
+    </button>
+  )
+}
