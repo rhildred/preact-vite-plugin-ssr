@@ -14,5 +14,8 @@
     "vite": "^4.0.3",
     "vite-plugin-ssr": "0.4.139"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@mdx-js/rollup": "^2.3.0"
+  }
 }

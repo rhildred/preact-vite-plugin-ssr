@@ -1,8 +1,10 @@
 import preact from '@preact/preset-vite'
 import ssr from 'vite-plugin-ssr/plugin'
+import mdx from '@mdx-js/rollup';
 
 const config = {
   plugins: [preact(), 
+    mdx(),
     ssr({
       prerender: true,
       includeAssetsImportedByServer: true,
